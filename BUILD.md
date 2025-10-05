@@ -94,3 +94,10 @@ If you prefer Microsoft Visual C++:
 rc resource.rc
 cl /std:c++17 /EHsc /O2 /Fe:dns_toggle.exe main.cpp resource.res iphlpapi.lib ws2_32.lib /link /SUBSYSTEM:WINDOWS
 ```
+
+
+# I compiled it with:
+
+```bash
+windres resource.rc -O coff -o resource.o && g++ -std=c++17 -municode -mwindows -O2 main.cpp resource.o -o dns_toggle.exe -liphlpapi -lws2_32 -ladvapi32 -static-libgcc -static-libstdc++
+```

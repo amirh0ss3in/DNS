@@ -1,6 +1,7 @@
 // Modern DNS Toggle Application
 // Uses registry-based approach for maximum compatibility
 // Requires Windows Vista or later and Administrator privileges
+// Compile with: windres resource.rc -O coff -o resource.o && g++ -std=c++17 -municode -mwindows -O2 main.cpp resource.o -o dns_toggle.exe -liphlpapi -lws2_32 -ladvapi32 -static-libgcc -static-libstdc++
 
 #define _UNICODE
 #define WIN32_LEAN_AND_MEAN
