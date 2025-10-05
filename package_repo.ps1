@@ -1,6 +1,7 @@
 # package_repo.ps1
 # Collect all important text-based files into a single text file for review.
-# runs with: powershell -ExecutionPolicy Bypass -File .\package_repo.ps1
+# runs with: 
+# powershell -ExecutionPolicy Bypass -File .\package_repo.ps1
 
 $output = "repo_summary.txt"
 if (Test-Path $output) { Remove-Item $output }
