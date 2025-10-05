@@ -1,0 +1,5 @@
+#include "resource.h"
+#include <windows.h>
+
+// Embed the application manifest with visual styles and admin privileges
+IDR_MANIFEST RT_MANIFEST "dns_toggle.exe.manifest"
